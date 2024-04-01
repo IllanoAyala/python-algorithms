@@ -1,12 +1,12 @@
-#Resolve [2,2,3,7,5,4,5,4] pick number that is not repeated.
+#Resolve [0,1,0,1,0,1,99] pick number that is not repeated.
 
-numbers = [2,2,9,7,5,4,5,4,8,10,9,3,5]
+numbers = [0,1,0,1,0,1,99]
 def find_unique_number(numbers):
-    unique_number = []
+    unique_number = None
 
     for number in numbers:
         if numbers.count(number) == 1:
-            unique_number.append(number)
+            unique_number = number
         else:
             pass
 
